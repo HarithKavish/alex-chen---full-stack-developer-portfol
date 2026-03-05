@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative portfolio of Alex Chen, a full-stack developer specializing in modern web applications.">
+    <title>Alex Chen - Full Stack Developer Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #0c0c1d 0%, #1a1a2e 50%, #16213e 100%); color: #e0e0e0; min-height: 100vh; }
+        header { text-align: center; padding: 80px 20px 40px; }
+        header h1 { font-size: 3rem; background: linear-gradient(90deg, #00d2ff, #3a7bd5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; color: #a0a0c0; }
+        .projects { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .projects h2 { font-size: 2rem; margin-bottom: 30px; color: #00d2ff; }
+        .card { background: rgba(255,255,255,0.05); border-radius: 12px; padding: 24px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-4px); border-color: #3a7bd5; }
+        .card h3 { color: #fff; margin-bottom: 8px; }
+        .card p { color: #b0b0d0; line-height: 1.6; }
+        .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+        .skills span { background: rgba(58,123,213,0.2); color: #7ec8f0; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; }
+        footer { text-align: center; padding: 40px; color: #606080; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alex Chen</h1>
+        <p>Full Stack Developer &amp; Open Source Enthusiast</p>
+    </header>
+    <section class="projects">
+        <h2>Featured Projects</h2>
+        <div class="card">
+            <h3>CloudSync Dashboard</h3>
+            <p>Real-time multi-cloud infrastructure monitoring dashboard built with React and WebSockets. Handles 10K+ concurrent connections with sub-100ms latency.</p>
+            <div class="skills"><span>React</span><span>Node.js</span><span>WebSocket</span><span>AWS</span></div>
+        </div>
+        <div class="card">
+            <h3>DataFlow Engine</h3>
+            <p>High-performance ETL pipeline framework for processing 1M+ records per minute. Features automatic schema detection, incremental loading, and fault tolerance.</p>
+            <div class="skills"><span>Python</span><span>Apache Kafka</span><span>PostgreSQL</span><span>Docker</span></div>
+        </div>
+        <div class="card">
+            <h3>SecureVault API</h3>
+            <p>Zero-knowledge encrypted file storage API with end-to-end encryption. Open source with 2.3K GitHub stars.</p>
+            <div class="skills"><span>Go</span><span>gRPC</span><span>Redis</span><span>Kubernetes</span></div>
+        </div>
+    </section>
+    <footer><p>&copy; 2024 Alex Chen. Built with passion and caffeine.</p></footer>
+</body>
+</html>
